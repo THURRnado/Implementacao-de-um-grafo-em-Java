@@ -69,7 +69,7 @@ class Graph {
             int u = fila.poll();
 
             if (u == t) {
-                // reconstrói o caminho a partir do vértice de destino
+                // refaz o caminho a partir do vértice de destino
                 int v = t;
                 while (v != -1) {
                     caminho.add(v);
@@ -89,7 +89,7 @@ class Graph {
             }
         }
 
-        // não há caminho entre s e t
+        // não há aresta entre s e t
         return null;
     }
 }
